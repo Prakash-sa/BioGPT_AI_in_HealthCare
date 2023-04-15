@@ -60,7 +60,7 @@ const Navbar = () => {
                 >
                     <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 lg:my-5">
                         <li className="text-gray-600 hover:text-blue-600">
-                            <a href="/">Home</a>
+                            <a href="/home">Home</a>
                         </li>
                         <li className="text-gray-600 hover:text-blue-600">
                             <a href="/regression">Regression</a>
