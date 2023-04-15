@@ -33,23 +33,20 @@ const Home = () => {
       [
         {
           "id":"ai",
-          "text":"Please enter the context.."
+          "text":"Hi there how are you doing?",
+          "timestamp":"12 min"
         },
         {
           "id":"client",
-          "text":"this is the context"
-        },
-        {
-          "id":"ai",
-          "text":"Hi there how are you doing?"
-        },
-        {
-          "id":"client",
-          "text":"Fuck off AI."
+          "text":"Fuck off AI.",
+          "timestamp":"14 min"
         }
       ]
     );
+
     const [inputText,setInputText]=useState('');
+    const [patientHistory,setPatientHistory]=useState('');
+
 
     useEffect(() => {
       dummy.current.scrollIntoView({ behavior: "smooth" });
@@ -108,9 +105,9 @@ const Home = () => {
                     style={{ borderBottom: "1px solid rgba(255,255,255,.3)" }}
                   >
                     <p className="fw-bold mb-0">BioGPT</p>
-                    <p className="text-light small mb-0">
-                      <MDBIcon far icon="clock" /> 12 mins ago
-                    </p>
+                    {/* <p className="text-light small mb-0">
+                      <MDBIcon far icon="clock" /> {element.timestamp} ago
+                    </p> */}
                   </MDBCardHeader>
                   <MDBCardBody>
                     <p className="mb-0">
@@ -128,9 +125,9 @@ const Home = () => {
                     style={{ borderBottom: "1px solid rgba(255,255,255,.3)" }}
                   >
                     <p class="fw-bold mb-0">You</p>
-                    <p class="text-light small mb-0">
-                      <MDBIcon far icon="clock" /> 13 mins ago
-                    </p>
+                    {/* <p class="text-light small mb-0">
+                      <MDBIcon far icon="clock" /> {element.timestamp} ago
+                    </p> */}
                   </MDBCardHeader>
                   <MDBCardBody>
                     <p className="mb-0">
@@ -150,14 +147,16 @@ const Home = () => {
   )
   
   return (
-    
-    <MDBContainer fluid class="py-5 h-full w-full flex justify-center place-items-center align-middle gradient-custom">
+    <MDBContainer fluid class="py-5 h-full w-full flex flex-col justify-center place-items-center align-middle gradient-custom">
+      <div className="w-9/12">
+        <MDBTextArea label="Patient History" id="textAreaExample" rows={4} value={patientHistory} onChange={(e)=>setPatientHistory(e.target.value)} />
+      </div>
       <MDBRow class="py-5 h-full w-full flex justify-center place-items-center align-middle">
         <MDBCol md="6" lg="7" xl="8">
           <MDBTypography listUnStyled className="text-white">
             {listItems}
             <li className="mb-3">
-              <MDBTextArea label="Message" id="textAreaExample" rows={4} value={inputText} onChange={(e)=>setInputText(e.target.value)} />
+              <MDBTextArea label="Send a message..." id="textAreaExample" rows={4} value={inputText} onChange={(e)=>setInputText(e.target.value)} />
             </li>
             <MDBBtn color="light" size="lg" rounded className="float-end" onClick={onSendClick}>
               Send
@@ -166,7 +165,6 @@ const Home = () => {
           </MDBTypography>
         </MDBCol>
       </MDBRow>
-      
     </MDBContainer>
   )
 }
