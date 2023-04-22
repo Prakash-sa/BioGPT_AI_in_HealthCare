@@ -21,31 +21,23 @@ import {
 
 
 
-const backendLink="http://0c00-34-74-16-171.ngrok.io"
+const backendLink="http://f7a4-34-147-93-186.ngrok.io"
 
 const Home = () => {
 
   const dummy = useRef(null);
   
-
-    const [question, setQuestion] = useState('');
-    const [data,setData]=useState(
+    var [data,setData]=useState(
       [
         {
           "id":"ai",
-          "text":"Hi there how are you doing?",
-          "timestamp":"12 min"
-        },
-        {
-          "id":"client",
-          "text":"Fuck off AI.",
-          "timestamp":"14 min"
+          "text":"Please enter your medical history and we can help with your queries."
         }
       ]
     );
 
-    const [inputText,setInputText]=useState('');
-    const [patientHistory,setPatientHistory]=useState('');
+    var [inputText,setInputText]=useState("");
+    var [patientHistory,setPatientHistory]=useState("");
 
 
     useEffect(() => {
@@ -59,33 +51,34 @@ const Home = () => {
 
     const onSendClick=()=>{
       console.log(inputText);
-      const tmp={"id":"client","text":inputText};
-      setData([...data,tmp]);
-      setInputText("");
-      // onFormSubmit();
-    }
+      var tmp1={"id":"client","text":inputText};
+      setData([...data,tmp1]);
 
-  
-    const onFormSubmit = (e) => {
-      // e.preventDefault();
+      setInputText("");
+
+      
       const config={
         headers:{
           'content-type':'application/json',
           "Access-Control-Allow-Origin":"*",
           "Access-Control-Allow-Headers":"X-Requested-With",
-          "Content-Security-Policy": "upgrade-insecure-requests"
+          "Content-Security-Policy": "upgrade-insecure-requests",
+          "mode": "cors"
         }
       };
 
-
-      axios.post(backendLink+'/api/upload/', question,config)
+      var data1={}
+      data1['context']=patientHistory;
+      data1['question']=inputText
+      axios.post(backendLink+'/api/compute/', data1,config)
       .then((response) => {
-        console.log(response.data);
-        alert("Done Computing!!");
+        console.log(response.data['data']);
+        var responseresult={"id":"ai","text":response.data['data']};
+        setData([...data,tmp1,responseresult]);
       }).catch((err)=>{
         console.log('err',err);
       });
-    };
+    }
 
 
     const listItems = data.map(

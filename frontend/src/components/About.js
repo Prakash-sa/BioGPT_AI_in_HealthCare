@@ -21,16 +21,16 @@ const About = () => {
                                     <img class="w-8 h-8 rounded-full" src={DiWu} alt="Neil image"/>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                    <p class="text-sm font-medium text-gray-900 truncate">
                                         Prakash Saini
                                     </p>
-                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                    <p class="text-sm text-gray-500 truncate">
                                         ps34844@utexas.edu
                                     </p>
                                 </div>
-                                <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                                     Something...
-                                </div>
+                                </div> */}
                             </div>
                         </li>
                         <li class="py-3 sm:py-4">
@@ -39,16 +39,16 @@ const About = () => {
                                     <img class="w-8 h-8 rounded-full" src={DiWu} alt="Bonnie image"/>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                    <p class="text-sm font-medium text-gray-900 truncate">
                                         Vinit Ramanath Waingankar
                                     </p>
-                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                                        email@windster.com
+                                    <p class="text-sm text-gray-500 truncate">
+                                        vrwaingankar@utexas.edu
                                     </p>
                                 </div>
-                                <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                                 Something...
-                                </div>
+                                </div> */}
                             </div>
                         </li>
                         <li class="py-3 sm:py-4">
@@ -57,16 +57,16 @@ const About = () => {
                                     <img class="w-8 h-8 rounded-full" src={DiWu} alt="Michael image"/>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                    <p class="text-sm font-medium text-gray-900 truncate">
                                         Sravan Reddy
                                     </p>
-                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                    <p class="text-sm text-gray-500 truncate">
                                         ps34844@utexas.edu
                                     </p>
                                 </div>
-                                <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                                 Something...
-                                </div>
+                                </div> */}
                             </div>
                         </li>
                     </ul>
