@@ -21,7 +21,7 @@ import {
 
 
 
-const backendLink="http://f7a4-34-147-93-186.ngrok.io"
+const backendLink="http://9e34-34-74-10-70.ngrok.io"
 
 const Home = () => {
 

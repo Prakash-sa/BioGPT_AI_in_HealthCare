@@ -8,6 +8,27 @@ Questions:- 1. Can you provide more information on the genetic factors that cont
 3. What are some common symptoms of seasonal allergies, and how can they be managed?
 4. What are some common side effects of Lisinopril and Metformin?
 
+BioGPT answers:-
+1. Lisinopril and Metformin for her conditions and reports good control of her blood pressure and blood sugar levels. She is allergic to penicillin and sulfa drugs and has never had any surgeries or hospitalizations. Her family medical history is significant for hypertension and diabetes. She does not smoke or drink alcohol, exercises regularly, and tries to maintain a healthy diet.
+
+2. regular follow-up appointments
+
+3. penicillin and sulfa drugs
+
+4. diabetes
+
+
+ChatGPT answers:-
+1. Hypertension and type 2 diabetes are complex diseases with both genetic and environmental factors contributing to their development. While specific genetic variants have been identified as risk factors for these conditions, the interaction between these genetic factors and environmental factors such as diet, exercise, and stress is also important. A family history of hypertension and diabetes can increase an individual's risk of developing these conditions, although lifestyle factors can modify this risk.
+
+2. The frequency of follow-up visits with a primary care physician can vary depending on an individual's health status and medical history. For someone with a history of hypertension, type 2 diabetes, and seasonal allergies, it is generally recommended to have regular check-ups every 3-6 months. However, the best course of action should be discussed and determined between Mary and her primary care physician.
+
+3. Common symptoms of seasonal allergies include sneezing, runny nose, itchy or watery eyes, and nasal congestion. Other symptoms may include coughing, sore throat, and fatigue. Seasonal allergies can be managed with a combination of medication and lifestyle modifications. Over-the-counter antihistamines and nasal corticosteroids can be effective in reducing symptoms. Avoiding triggers such as pollen and other allergens, keeping windows closed during high pollen counts, and regularly cleaning indoor spaces can also help alleviate symptoms.
+
+4. Lisinopril is an ACE inhibitor used to treat hypertension and heart failure. Common side effects may include dizziness, headache, cough, and gastrointestinal upset. Rarely, lisinopril can cause more serious side effects such as kidney problems or angioedema (swelling of the face, lips, tongue, or throat). Metformin is an oral medication used to treat type 2 diabetes. Common side effects may include gastrointestinal upset such as diarrhea, nausea, and stomach pain. Rarely, metformin can cause more serious side effects such as lactic acidosis (a buildup of lactic acid in the blood), which can be life-threatening.
+
+
+
 2. Patient History:- David Lee has a history of heart disease, which was diagnosed 10 years ago. He has had two myocardial infarctions (heart attacks), the most recent being 3 years ago, for which he underwent a coronary artery bypass graft surgery. He also has a history of hypertension, which has been well controlled with medication. David is allergic to shellfish and is currently taking aspirin, lisinopril, and a statin medication for his heart disease.
 David has a family history of heart disease, with his father having a myocardial infarction at the age of 60. He has no history of other chronic medical conditions or surgeries, and his medication history is limited to his current heart medications.
 In terms of lifestyle habits, David reports that he does not smoke but drinks alcohol occasionally. He is not physically active due to his heart condition but is conscious of his diet and tries to avoid foods that are high in cholesterol and saturated fat.
@@ -16,6 +37,11 @@ David Lee has a history of heart disease, including two heart attacks and a coro
 
 Questions:- 1. How often should David Lee follow up with his cardiologist?
 
+BioGPT answers:- regular follow-up appointments
+
+ChatGPT answers:-
+Based on the information provided, David Lee has a history of heart disease, including two heart attacks and a coronary artery bypass graft surgery, and is currently taking medication for his heart disease. It is therefore recommended that he has regular follow-up appointments with his cardiologist to monitor his condition and adjust his treatment plan if necessary.
+The frequency of these follow-up appointments will depend on David's specific health status and medical history, as determined by his cardiologist. However, it is generally recommended that individuals with a history of heart disease should have regular check-ups at least every 6-12 months, or more frequently if necessary. Therefore, David Lee should follow the recommendations of his cardiologist regarding the frequency of follow-up appointments.
 
 3. Patient History:- John Smith has no significant medical history. He is currently taking no medications and has no allergies. John has never had any surgeries or hospitalizations, and his family medical history is unremarkable.
 John is a non-smoker and drinks alcohol socially. He reports that he tries to maintain a healthy diet and exercises regularly by going to the gym three times a week.
@@ -25,3 +51,9 @@ Question:- 1. What could be the causes of chest pain, shortness of breath, and f
 2. What are some potential tests or diagnostic procedures that John may undergo to evaluate his symptoms?
 3. Can you provide more information on the potential complications of chest pain and shortness of breath during exercise?
 
+BioGPT :-
+1. occasional shortness of breath and fatigue during exercise. John is concerned that he may be experiencing heart problems.
+
+2. Lisinopril for hypertension and Metformin
+
+3. fatigue

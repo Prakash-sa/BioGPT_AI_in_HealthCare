@@ -5,10 +5,12 @@ import { ResultImageCards } from './ResultImageCards';
 import { Progress } from "@material-tailwind/react";
 import {useDropzone} from 'react-dropzone'
 
+import excelfile from '../assets/results.csv'
+
 
 const imageTypeRegex = /image\/(png|jpg|jpeg)/gm;
 
-const backendLink="http://0c00-34-74-16-171.ngrok.io"
+const backendLink="http://127.0.0.1:5000"
 const link="kdf"
 
 const Classification = () => {
@@ -17,6 +19,8 @@ const Classification = () => {
     const [progress,setProgress]=useState(0);
     const [imagebase64,setImagebase64]=useState([]);
     const [imageData,setImageData]=useState({});
+
+    const [done,setDone]=useState(false);
 
 
     function isEmptyObject(obj){
@@ -81,7 +85,7 @@ const Classification = () => {
       e.preventDefault();
       var data={};
       for( var i =0;i<imageFiles.length;i++){
-        data[imageFiles[i].name]=imagebase64[i];
+        data['image']=imagebase64[i];
       }
       console.log("send format",data);
   
@@ -103,6 +107,7 @@ const Classification = () => {
         console.log(response.data);
         setImageData(response.data);
         alert("Done Computing!!");
+        setDone(true);
       }).catch((err)=>{
         console.log('err',err);
       });
@@ -150,9 +155,14 @@ const Classification = () => {
               </div>
             <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
               <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Submit</button>
+              {done?
+                <a href={excelfile} download="results.csv"> 
+                <button type='button' class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Download Excel File</button> </a>:
+                <></>}
             </div>
             
           </div>
+          
       </form>
     </div>
   )
