@@ -61,7 +61,7 @@ const About = () => {
                                         Sravan Reddy
                                     </p>
                                     <p class="text-sm text-gray-500 truncate">
-                                        ps34844@utexas.edu
+                                        sravanreddy295@gmail.com
                                     </p>
                                 </div>
                                 {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
