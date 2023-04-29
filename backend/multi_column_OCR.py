@@ -166,4 +166,4 @@ print("[INFO] saving CSV file to disk...")
 df.to_csv(args["output"], index=False)
 # show the output image after performing multi-column OCR
 cv2.imshow("Output", image)
-cv2.waitKey(0)
+# cv2.waitKey(0)
